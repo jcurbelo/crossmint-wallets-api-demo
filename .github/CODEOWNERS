@@ -1,0 +1,44 @@
+# CODEOWNERS file for crossmint-wallets-api-demo
+# This file defines code ownership for different parts of the repository
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global default owner - will be requested for review on all PRs
+# unless a more specific rule takes precedence
+* @jcurbelo robin@paella.dev
+
+# Documentation files - keeping open for community contributions
+# No specific owner assigned to encourage documentation contributions
+*.md
+docs/
+README.md
+
+# Configuration files - require owner approval for security and stability
+package.json @jcurbelo robin@paella.dev
+pnpm-lock.yaml @jcurbelo robin@paella.dev
+tsconfig.json @jcurbelo robin@paella.dev
+next.config.mjs @jcurbelo robin@paella.dev
+tailwind.config.ts @jcurbelo robin@paella.dev
+.eslintrc.js @jcurbelo robin@paella.dev
+.prettierrc @jcurbelo robin@paella.dev
+
+# Core application code - primary ownership but open for contributions
+/app/ @jcurbelo robin@paella.dev
+/components/ @jcurbelo robin@paella.dev
+/lib/ @jcurbelo robin@paella.dev
+/providers/ @jcurbelo robin@paella.dev
+/hooks/ @jcurbelo robin@paella.dev
+
+# API routes - require owner review for security
+/app/api/ @jcurbelo robin@paella.dev
+
+# Critical library files - require owner approval
+/lib/api.ts @jcurbelo robin@paella.dev
+/lib/server.ts @jcurbelo robin@paella.dev
+/lib/token.ts @jcurbelo robin@paella.dev
+
+# GitHub workflows and repository configuration - owner only
+/.github/ @jcurbelo robin@paella.dev
+.gitignore @jcurbelo robin@paella.dev
+
+# CODEOWNERS file itself - protect against unauthorized changes
+/.github/CODEOWNERS @jcurbelo robin@paella.dev 
